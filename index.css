@@ -1,0 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+
+.botao{
+    font-size: 20px;
+    background-color: rgb(235, 230, 230);
+    color:#0a0a09; 
+    border-radius: 20%; 
+    height: 20px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 15px;
+  
+}
+
+
+.preco{
+    color: #e50e0e;
+}
