@@ -1,40 +1,40 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-  }
-  
-.fundo{
-    background-color: rgb(236, 207, 211);
+body {
+    font-family: Arial, sans-serif;
 }
 
-.botao{
-    background-color: rgb(172, 166, 166);
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    padding: 15px 20px;
-    font-size: 12px;
-    cursor: pointer;
-    height: 50px;
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     
-    
-
-
-
-
-    /*font-size: 20px;
-    background-color: rgb(235, 230, 230);
-    color:#0a0a09; 
-    border-radius: 30%; 
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    font-size: 15px;*/
-  
+    margin: 20px;
 }
 
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#your-cart {
+    margin-top: 20px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
 
 .preco{
-    color: #e50e0e;
+    color: red;
 }
