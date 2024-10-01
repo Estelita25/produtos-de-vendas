@@ -1,40 +1,109 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    font-family: 'Red Hat Text';
+}
+
+
+.red-hat-text-font {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    /* Cores das fontes */
+    --font-color-primary: #382d20;
+    --font-color-secondary: #484642;
+    --font-color-tertiary: #6c6865;
+
+    /* Cores dos botões */
+    --button-color-primary: #c83b0e;
+    --button-color-secondary: #cf2a09;
+
+    /* Cor de fundo */
+    --background-color: #b4775b;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-    margin: 20px;
-}
-
-.product {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-}
-
-#your-cart {
-    margin-top: 20px;
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
+    max-width: 80%;
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
 }
 
-.close-button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+
+.cart {   
+  
+   float: right;
+}
+
+.container h1 {
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+.item img {
+    height: 220px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.select-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select-item button {
+    position: absolute;
+    bottom: 70px;
+}
+
+.cart-outline {
+    background-color: white;
+    color: var(--button-color-primary);
+    font-size: 18px;
+}
+
+.item button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+    background-color: white;
+    height: 40px;
+    width: 130px;
+    border-radius: 50px;
+}
+
+.item span {
+    display: block;
+    font-size: 12px;
+    color: var(--font-color-secondary);
+}
+
+.item h3 {
+    font-size: 16px;
+    color: var(--font-color-primary);
+}
+
+.item p {
     font-weight: bold;
-}
-
-.preco{
-    color: red;
+    color: var(--button-color-primary);
 }

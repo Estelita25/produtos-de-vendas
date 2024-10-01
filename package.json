@@ -1,20 +1,11 @@
 {
-  "name": "produtos-de-vendas",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "echo \"Error: no test specified && exit 1"
+  "dependencies": {
+    "uuid": "^10.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
+    "@types/uuid": "^10.0.0",
     "sass": "^1.79.1",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.5"
+    "ts-node": "^10.9.2",
+    "vite": "^5.4.6"
   }
 }
